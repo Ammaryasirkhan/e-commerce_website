@@ -1,0 +1,50 @@
+/* Default styles for larger screens */
+.newCollections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 100px;
+  }
+  
+  .newCollections h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  
+  .newCollections hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+  }
+  
+  .collections {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+    gap: 30px;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media screen and (max-width: 768px) {
+    .newCollections {
+      margin-bottom: 50px; /* Adjust margin for smaller screens */
+    }
+  
+    .newCollections h1 {
+      font-size: 36px; /* Adjust font size for smaller screens */
+    }
+  
+    .newCollections hr {
+      width: 150px; /* Adjust width for smaller screens */
+      height: 4px; /* Adjust height for smaller screens */
+    }
+  
+    .collections {
+      grid-template-columns: 1fr 1fr; /* Adjust the number of columns for smaller screens */
+      gap: 20px; /* Adjust gap for smaller screens */
+    }
+  }
+  

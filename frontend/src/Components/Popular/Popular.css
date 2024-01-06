@@ -1,0 +1,49 @@
+/* Default styles for larger screens */
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+  }
+  
+  .popular h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  
+  .popular hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+  }
+  
+  .popular-items {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media screen and (max-width: 768px) {
+    .popular {
+      height: auto; /* Adjust height for smaller screens */
+    }
+  
+    .popular h1 {
+      font-size: 36px; /* Adjust font size for smaller screens */
+    }
+  
+    .popular hr {
+      width: 150px; /* Adjust width for smaller screens */
+    }
+  
+    .popular-items {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center; /* Center items on smaller screens */
+      gap: 20px; /* Adjust gap for smaller screens */
+    }
+  }
+  

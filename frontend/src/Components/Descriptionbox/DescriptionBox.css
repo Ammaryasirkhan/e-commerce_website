@@ -1,0 +1,47 @@
+/* DescriptionBox.css */
+
+.decbox {
+  margin-top: 20px;
+}
+
+.descriptionbox-navigator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.description-box-nav-box {
+  margin-top: 20px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease-in-out;
+  margin: 0 10px;
+}
+
+.description-box-nav-box:hover {
+  border-bottom: 2px solid #333;
+}
+
+.fade {
+  opacity: 0.5;
+}
+
+.descriptionbox-description {
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+/* Responsive styles for mobile */
+
+@media screen and (max-width: 768px) {
+  .descriptionbox-navigator {
+    flex-direction: row; /* Align boxes horizontally for larger screens */
+  }
+
+  .description-box-nav-box {
+    margin: 10px 0; /* Adjust margin for space between boxes */
+  }
+}

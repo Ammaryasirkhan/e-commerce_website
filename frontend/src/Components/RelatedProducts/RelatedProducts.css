@@ -1,0 +1,32 @@
+/* RelatedProducts.css */
+
+.relatedproducts {
+    margin-top: 40px;
+    display: grid; /* or display: flex; */
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Added to center-align text within .relatedproducts */
+  }
+  
+  .relatedproducts h1 {
+    color: #333;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  
+  .relatedproducts hr {
+    width: 50px;
+    height: 3px;
+    background-color: #333;
+    border: none;
+    margin-top: 10px;
+  }
+  
+  .relatedproducts-items {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  

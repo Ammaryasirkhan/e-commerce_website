@@ -1,0 +1,53 @@
+/* Default styles for larger screens */
+.items {
+    width: 350px;
+  }
+  
+  .item p {
+    margin: 0 6px;
+  }
+  
+  .items-prices {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .items-price-new {
+    color: #374151;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .items-price-old {
+    color: #8c8c8c;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: line-through;
+  }
+  
+  .items:hover {
+    transform: scale(1.05);
+    transition: 0.6s;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media screen and (max-width: 768px) {
+    .items {
+      width: 100%; /* Take full width on smaller screens */
+    }
+  
+    .item p {
+      margin: 0; /* Remove margin on smaller screens */
+    }
+  
+    .items-prices {
+      flex-direction: column; /* Stack prices vertically on smaller screens */
+      gap: 10px;
+    }
+  
+    .items-price-new,
+    .items-price-old {
+      font-size: 16px; /* Adjust font size for smaller screens */
+    }
+  }
+  
